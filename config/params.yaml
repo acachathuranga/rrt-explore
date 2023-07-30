@@ -1,0 +1,16 @@
+$(var namespace)/rrt:
+  ros__parameters:
+    map_topic: /$(var namespace)/map
+    costmap_topic: /$(var namespace)/global_costmap/costmap
+    robot_base_frame: base_footprint                            # Without namespace (prefix)
+    robot_frame_prefix: robot                                   # robot is the prefix where frames are s.t. robot1/base_footprint, robot2/base_footprint
+    rate: 100.0
+    robot_count: 1
+
+    costmap_pixel_threshold: 30.0
+    info_radius: 1.0
+    hysteresis_radius: 3.0
+    hysteresis_gain: 2.0
+    eta: 1.0
+
+

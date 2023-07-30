@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+*.DS_Store
+
+*.tar.gz
+*.eps
+*.mat
+*.npy
+*.pkl
+*.tar
+
+.vscode/
+
