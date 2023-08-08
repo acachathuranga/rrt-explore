@@ -65,7 +65,7 @@ RRT::RRT() : Node("RRT_node")
     exploration_state_publisher_ = this->create_publisher<rrt_explore::msg::ExplorationState>("/exploration_state", 1);
     
     /*------- Create timers ------*/
-    // timer_exploration_state_publisher_ = this->create_wall_timer( std::chrono::duration<double>(1.0 / rate_), std::bind(&RRT::publish_exploration_state, this));
+    timer_exploration_state_publisher_ = this->create_wall_timer( std::chrono::duration<double>(1.0 / rate_), std::bind(&RRT::publish_exploration_state, this));
 
     /*------- Create random number generator ------*/
  	// this is an example of initializing by an array
