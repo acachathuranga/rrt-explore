@@ -296,6 +296,7 @@ void RRT::explore()
         }
     }
 
+    return; // slam_toolbox map merger provides a single reference frame between all maps. Hence map transforms will not jump. No need to reset rrt
     if(robot_count_>1){
         bool reset_rrt = false;
         for (int i = 0; i < robot_count_; i++)
