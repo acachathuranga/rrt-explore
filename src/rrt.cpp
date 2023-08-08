@@ -253,7 +253,7 @@ void RRT::explore()
         }
 
         /*------- Display Valid Frontiers ------*/
-        visualization_msgs::msg::Marker target_frontiers = create_visualization_msg(VisualizationType::POINTS, (1.0 / rate_));
+        visualization_msgs::msg::Marker target_frontiers = create_visualization_msg(VisualizationType::POINTS, 1.0);
         for(int i= frontiers_.size()-1; i>-1;i--){
             target_frontiers.points.push_back(frontiers_[i].point);
         }
